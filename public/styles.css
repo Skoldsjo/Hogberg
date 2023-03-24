@@ -7,7 +7,7 @@
 
 body {
     background-color: #e5e6ea;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 header {
@@ -62,6 +62,7 @@ nav ul li a {
 
 .logo img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .truck-img {
@@ -74,6 +75,7 @@ nav ul li a {
 .truck-img img {
     width: 100%;
     max-height: 100%;
+    border-radius: 5px;
 }
 
 .hero-text {
@@ -86,24 +88,118 @@ nav ul li a {
 }
 
 
-/* Transport */
+/* About / Om Oss */
 
-h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 20px;
+#about {
+    padding: 80px 10%;
+    color: #000;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.about-col-1 {
+    flex-basis: 35%;
+    margin: auto;
+}
 
+.about-col-1 img {
+    width: 100%;
+    border-radius: 5px;
+}
 
-/*  about */
+.about-col-2 {
+    flex-basis: 60%;
+}
 
-/* #about {
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Our services / Våra Tjänster */
+
+#services h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.grid-box {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 50px;
+    justify-content: center;
+}
+
+.grid {
     height: 400px;
-} */
+    background-color: #5464a0;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
 
-.card {
+i {
+    font-size: 100px;
+    color: #23317b;
+    padding: 30px;
+}
 
+h3 {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.grid p {
+    line-height: 1.5;
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #121d1b;
+    padding: 80px 10%;
+    color: #fff;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+.phoneNumber {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.i-contact {
+    font-size: 30px;
+    color: crimson;
+    text-shadow: 0 0 1px #000;
+}
+
+.skoldsjo {
+    background-color: #121d1b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.skoldsjo a {
+    color: #fff;
 }

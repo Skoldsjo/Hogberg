@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Högberg Transport</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,9 +13,9 @@
         <nav>
             <ul>
                 <li><a href="#">Hem</a></li>
-                <li><a href="#">Transport</a></li>
-                <li><a href="#">Om Oss</a></li>
-                <li><a href="#">Kontakt</a></li>
+                <li><a href="#about">Om Oss</a></li>
+                <li><a href="#services">Tjänster</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -35,18 +36,66 @@
         </div>
     </div>
 
-    <!-- Transport Start -->
+    <!-- About / Om Oss-->
 
-    <h2>Transport</h2>
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./img/scania.jpeg" >  
+            </div>
+            <div class="about-col-2">
+                <h2>Om Oss</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit dolorum architecto modi est esse libero, ipsa obcaecati iure debitis possimus rerum ullam cupiditate corporis molestiae ratione sed distinctio corrupti repudiandae iste itaque maiores accusantium dolores voluptates quisquam. Tempora consequatur quaerat totam in ipsam? Minus, expedita. Distinctio qui itaque sunt temporibus.</p>
+            </div>
+      </div>
+    </div>
 
-    <!-- <div id="about">
-        <div class="card">
-            <h2>Om Oss</h2>
-            <p class="card-text">
+    <!-- Our Services / Våra Tjänster -->
 
-            </p>
+    <div id="services">
+        <h2>Vad erbjuder vi?</h2>
+        <div class="grid-box">
+            <div class="grid">
+                <i class="fa-sharp fa-solid fa-road"></i>
+                <h3>Område</h3>
+                <p>Vårt främsta verksamhetsområde är i Mellansverige, men vi tar körningar i hela Sverige</p>
+            </div>
+            <div class="grid">
+                <i class="fa-solid fa-boxes-packing"></i>
+                <h3>Frakt</h3>
+                <p>Vi fraktar allt från</p>
+                <p>exempel</p>
+                <p>exempel</p>
+                <p>exempel</p>
+            </div>
+            <div class="grid">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Snabbt och tryggt</h3>
+                <p>Med flera års erfarenheter tar vi oss fram snabbt och säkert</p>
+            </div>
         </div>
-    </div> -->
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+        <h2>Kontakta Oss</h2>
+        <div class="phoneNumber">
+            <i class="fa-solid fa-phone i-contact"></i>
+            <a class="contact-info" href="tel:+46738338816">073-833 88 16</a>
+        </div>
+        <div class="mail">
+            <i class="fa-solid fa-paper-plane i-contact"></i>
+            <a class="contact-info" href="">dagsAttFlyNybble@idag.se</a>
+        </div>
+
+        
+        
+    </div>
+    <div class="skoldsjo">
+        <p>Made by <a href="https://www.skoldsjo.se" target="_blank">Skoldsjo</a></p>
+    </div>
+
 
 </body>
 </html>
