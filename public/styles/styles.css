@@ -1,0 +1,295 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body {
+    background-color: #e5e6ea;
+    font-family: sans-serif;
+}
+
+header {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #e5e6ea;
+    border-bottom: 1px solid #000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    /* color: #253186; */
+    color: #000;
+}
+
+/* Hero Container */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 100px;
+}
+
+.hero-img {
+    width: 60%;
+    position: relative;
+}
+
+.hero-img img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.logo {
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: -20%;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.truck-img {
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    right: -10%;
+}
+
+.truck-img img {
+    width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+}
+
+
+/* About / Om Oss */
+
+#about {
+    padding: 30px 10%;
+    color: #000;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    margin: auto;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 10px 0;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Our services / Våra Tjänster */
+
+#services h2 {
+    text-align: center;
+}
+
+.grid-box {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    gap: 50px;
+    justify-content: center;
+}
+
+.grid {
+    height: 400px;
+    background-color: #5464a0;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.grid i {
+    font-size: 100px;
+    color: #23317b;
+    padding: 30px;
+}
+
+h3 {
+    font-size: 26px;
+    padding: 10px;
+}
+
+.grid p {
+    line-height: 1.5;
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+/* Contact */
+
+#contact {
+    background-color: #121d1b;
+    padding: 80px 10%;
+    color: #fff;
+}
+
+#contact h2 {
+    color: #fff;
+}
+
+.phoneNumber {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.i-contact {
+    font-size: 30px;
+    color: crimson;
+    padding: 20px;
+}
+
+.skoldsjo {
+    background-color: #121d1b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;  
+}
+
+.skoldsjo a {
+    color: #fff;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 800px) {
+    .hero-container {
+        padding-bottom: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero-img {
+        width: 70%;
+    }
+
+    #about {
+        padding: 30px 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .logo {
+        width: 40%;
+        top: 10%;
+        left: -5%;
+    }
+
+    .truck-img {
+        width: 50%;
+        top: 80%;
+        right: -10%;
+    }
+
+    .about-col-1 {
+        display: none;
+    }
+
+    .about-col-2 h2 {
+        text-align: center;
+    }
+
+    .row {
+        justify-content: center;
+        display: block;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    #contact {
+        padding: 80px 5%;
+    }
+
+    .i-contact {
+        font-size: 24px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+    }
+
+    .grid-box {
+        grid-template-columns: repeat(auto-fill, 300px);
+    }
+     
+}

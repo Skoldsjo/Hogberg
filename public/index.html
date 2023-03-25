@@ -6,29 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Högberg Transport</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/mobile-nav.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul id="navbar" class="hide">
                 <li><a href="#">Hem</a></li>
                 <li><a href="#about">Om Oss</a></li>
                 <li><a href="#services">Tjänster</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
-        <div class="hamburger-menu">
-            <div id="myLinks">
-                <a href="#">Hem</a>
-                <a href="#about">Om Oss</a>
-                <a href="#services">Tjänster</a>
-                <a href="#contact">Kontakt</a>
-            </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="myIcon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 
-            
+        <!-- Mobile Navbar -->
+        <!-- mobile-nav.css -->
+
+        <button class="nav-icon">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div> 
+        </button>
+
+        <div class="small-nav">
+            <ul>      
+                <li><a href="#">Hem</a></li>
+                <li><a href="#about">Om Oss</a></li>
+                <li><a href="#services">Tjänster</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
         </div>
     </header>
 
@@ -59,7 +68,7 @@
                 <h2>Om Oss</h2>
                 <p>Högberg Transport & Entreprenad samarbetar med LBC Logistik. Vi har många års erfarenheter av transporter vilket gör oss säkra och effektiva i våra transporter.</p>
             </div>
-      </div>
+        </div>
     </div>
 
     <!-- Our Services / Våra Tjänster -->
@@ -100,14 +109,12 @@
             <i class="fa-solid fa-paper-plane i-contact"></i>
             <a class="contact-info" href="">dagsAttFlyNybble@idag.se</a>
         </div>
-
-        
-        
     </div>
+
     <div class="skoldsjo">
         <p>Made by <a href="https://www.skoldsjo.se" target="_blank">Skoldsjo</a></p>
     </div>
 
-    <script type="text/javascript" src="./javascript.js"></script>
+    <script type="text/javascript" src="./scripts/hamburger.js"></script>
 </body>
 </html>
